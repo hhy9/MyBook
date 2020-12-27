@@ -1,21 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import Nav from '../layout/Nav'
 
-const Main = () =>{
+const MainPage = () => {
   return (
     <>
       <MainDiv>
-    <div>  Main Page</div>
-        Main Page
-        Main Page
-        Main Page
-        Main Page
-        Main Page
-        Main Page
-        Main Page
-        Main Page
-        Main Page
-       </MainDiv>
+        <Nav/>
+      </MainDiv>
     </>
   )
 }
@@ -26,4 +18,5 @@ height:100vh;
 background-image: url('https://res.cloudinary.com/tinaland/image/upload/v1596348812/nick-fewings-f2Bi-VBs71M-unsplash_dxjphv.jpg');
 background-size:cover;
 `;
-export default Main;
+
+export default MainPage;
