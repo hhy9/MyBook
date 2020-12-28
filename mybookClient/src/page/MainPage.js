@@ -6,7 +6,9 @@ const MainPage = () => {
   return (
     <>
       <MainDiv>
+        <header className="main-header">
         <Nav/>
+        </header>
       </MainDiv>
     </>
   )
@@ -17,6 +19,10 @@ width:100%;
 height:100vh;
 background-image: url('https://res.cloudinary.com/tinaland/image/upload/v1596348812/nick-fewings-f2Bi-VBs71M-unsplash_dxjphv.jpg');
 background-size:cover;
+  .main-header{
+    height:8%;
+    border-bottom:1px solid white;
+  }
 `;
 
 export default MainPage;
