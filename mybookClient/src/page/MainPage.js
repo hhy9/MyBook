@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import Nav from '../layout/Nav'
+import DropdownNav from '../layout/DropdownNav';
 
 const MainPage = () => {
   return (
     <>
       <MainDiv>
         <header className="main-header">
-        <Nav/>
+          <DropdownNav />
         </header>
       </MainDiv>
     </>
