@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import styled from 'styled-components'
-import BookLogo from '../img/BookLogo.jpg'
+import Logo from '../item/Logo'
+
 const DropdownNav = () => {
   const [open,setOpen] = useState(false)
 
@@ -9,9 +10,9 @@ const DropdownNav = () => {
   return (
     <>
     <NavMain>
-      <div>
-        <img className="logoImg" src={BookLogo} alt="Logo" />
-      </div>
+        <div className="logoDiv">
+          <Logo/>
+        </div>
       <div className="firstMenuDiv" onClick={()=>setOpen(!open)}>
         나의 책       
         </div>
@@ -31,12 +32,12 @@ const DropdownNav = () => {
 const NavMain = styled.div`
   width:40%;
   margin: 0 auto;
-  
-  .logoImg{
-    
+  .logoDiv{
+    margin : 0 auto;
+    width: 200px;
   }
   .firstMenuDiv{
-    padding: 15px 30px 0px 30px;
+    padding: 10px 30px 0px 30px;
     color:black;
     font-weight:bold;
     font-size:18px;
