@@ -5,4 +5,4 @@ const app = express();
 
 
 
-app.listen(8000,()=>{console.log('server running')});
+app.listen(8000,()=>{console.log('server 8000')});
