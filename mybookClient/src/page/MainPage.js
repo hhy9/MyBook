@@ -8,7 +8,12 @@ const MainPage = () => {
     <>
       <MainDiv>
         <header className="main-header">
+        <div className="login-menu">
+            <span className="login-span">로그인</span>
+            <span>회원가입</span>
+          </div>
           <DropdownNav />
+          
         </header>
 
         <MainBodyDiv>
@@ -20,7 +25,7 @@ const MainPage = () => {
               나의 책
             </p>
             <p className="bookText-p-info">
-              
+            
             나의 책을 추가하여 <br/>
             언제든 코멘트를 달고,<br/>
             언제든 확인해보세요.<br/>
@@ -38,7 +43,17 @@ const MainDiv = styled.div`
   height: 100vh;
   .main-header {
     height: 30%;
-  }
+
+    .login-menu{
+      float:right;
+      margin-right:50px;
+      margin-top:15px;
+
+        .login-span{
+          margin-right: 10px;
+        }//login-span
+    }//login-menu
+  }//main-header
 `;
 
 const MainBodyDiv = styled.div`
